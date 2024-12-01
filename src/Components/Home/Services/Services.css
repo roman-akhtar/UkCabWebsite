@@ -1,0 +1,76 @@
+.f-services {
+  display: flex;
+}
+.services {
+  margin: 30px;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: bounce 2s ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.service:hover .image {
+  opacity: 0.5;
+}
+.service {
+  flex-basis: 31%;
+  position: relative;
+}
+.service_name {
+  color: black;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(13, 151, 146, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  padding-top: 70%;
+  transition: 0.4s;
+}
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.service:hover .caption {
+  opacity: 2;
+  padding-top: 0;
+}
+@media screen and (max-width: 500px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

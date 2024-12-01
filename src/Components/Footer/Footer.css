@@ -1,0 +1,147 @@
+.footer {
+  width: 100%;
+  height: 330px;
+  margin-top: 4rem;
+}
+
+.footer_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1500;
+}
+
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    70deg,
+    rgba(11, 19, 91, 1) 0%,
+    rgba(6, 148, 196, 1) 26%,
+    rgba(6, 148, 196, 1) 10%
+  );
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+}
+
+/* First Column */
+
+.footer1_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.info_contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info_contact img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.info_contact span {
+  color: white;
+}
+
+.info_social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.social_btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+
+.social_btns-btn {
+  background-color: #007ea7;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.social_btns-btn img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.copyright {
+  color: rgb(129, 116, 116);
+  font-size: smaller;
+}
+
+/* Rest 3 Columns */
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+.footer_links h2 {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.footer_links span {
+  cursor: pointer;
+}
+.terms {
+  color: black;
+  font-size: large;
+}
+@media screen and (max-width: 700px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    row-gap: 50px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer _wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .foote_info,
+  .info_contact,
+  .info_social,
+  .social_btns,
+  .social_btns-btn,
+  .footer_links {
+    align-items: left;
+    justify-content: center;
+  }
+}

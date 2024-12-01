@@ -1,0 +1,74 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      70deg,
+      rgba(6, 160, 166, 0.7) 0%,
+      rgba(15, 13, 62, 0.7) 26%,
+      rgba(46, 60, 68, 0.7) 50%
+    ),
+    url(../../../assets/Pictures/bg11.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.hero-text {
+  text-align: center;
+  max-width: 600px;
+}
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 900px;
+}
+
+.hero-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+/* Name animation */
+.name {
+  animation: topToBottom 1s 1;
+  color: rgb(6, 160, 166);
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Description Animation */
+.des {
+  animation: leftToRight 1s 1;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    z-index: 1;
+  }
+  .logo {
+    height: 109px;
+    width: 100px;
+    z-index: 2;
+  }
+  .car_img {
+    height: 100px;
+  }
+}
