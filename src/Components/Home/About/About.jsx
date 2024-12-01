@@ -19,7 +19,7 @@ const About = () => {
           <div className="about_left  ">
             <img className="about_img" src={about_logo} alt="" />
           </div>
-          <div className="about_right">
+          <div className="about_right divs">
             <h3>Aylestone Kings</h3>
             <h1>Smooth Rides, Reliable Service</h1>
 
@@ -45,7 +45,7 @@ const About = () => {
         {/* Second */}
 
         <div className="about  divs" id="About-Us">
-          <div className="about_left">
+          <div className="about_left divs">
             <h1>Download Our App!</h1>
             <p>
               You can conveniently access our app on the Play Store or App
